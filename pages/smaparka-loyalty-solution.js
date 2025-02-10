@@ -98,7 +98,9 @@ import Whyloyalty from "../components/whyloyalty";
 import HowItWorks from "../components/how-it-works";
 // import StoreDescription from "../components/StoreDescription";
 import Reservation from "../components/Reservation";
-import BusinessSoftware from "../components/BusinessSoftware";
+import BusinessSoftware from "../components/BusinessSoftware/BusinessSoftware";
+
+
 
 import styles from "./smaparka-loyalty-solution.module.css";
 import DataSecurity from "../components/DataSecurity";
@@ -119,6 +121,7 @@ const SmaparkaLoyaltySolution = () => {
       <LoyaltyHeroo />
       <Reservation/>
       <BusinessSoftware/>
+      
       {/* <StoreDescription/> */}
       <Whyloyalty />
       <LoyaltyWhy />
