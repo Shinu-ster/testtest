@@ -1,0 +1,93 @@
+/* Modal.module.css */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 10px; /* Reduced padding for more compact overlay */
+}
+
+.modalContent {
+  color: black;
+  background: white;
+  padding: 15px; /* Reduced padding for smaller content area */
+  border-radius: 8px;
+  max-width: 350px; /* Reduced max width for smaller modal */
+  width: 100%;
+  position: relative;
+  font-family: var(--font-poppins), sans-serif; /* Apply the desired font */
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px; /* Reduced space between the close button and the top */
+  right: 5px; /* Reduced space between the close button and the right */
+  background: transparent;
+  border: none;
+  font-size: 18px; /* Smaller close button */
+  cursor: pointer;
+  color: #333;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.modalImage {
+  width: 100%;
+  max-width: 100px; /* Smaller image size */
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px; /* Reduced margin to minimize space */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.h2 {
+  font-size: var(--font-size-lg); /* Smaller title size */
+  margin-bottom: 8px; /* Reduced margin for the title */
+  color: var(--color-black);
+}
+
+.p {
+  font-size: var(--font-size-sm); /* Smaller text size for paragraphs */
+  line-height: 1.3; /* Tighter line height */
+  color:black;
+  word-wrap: break-word;
+  margin-bottom: 10px; /* Reduced margin for paragraph */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .modalContent {
+    max-width: 90%;  /* Modal width for small screens */
+    padding: 10px;   /* Further reduced padding for mobile */
+  }
+
+  .h2 {
+    font-size: var(--font-size-md); /* Even smaller title on mobile */
+    margin-bottom: 6px; /* Less margin on mobile */
+  }
+
+  .p {
+    font-size: var(--font-size-xs); /* Smaller text for mobile */
+    margin-bottom: 8px; /* Less margin for paragraphs on mobile */
+  }
+
+  .modalImage {
+    max-width: 80px; /* Even smaller image on mobile */
+  }
+
+  .closeButton {
+    font-size: 16px; /* Smaller close button for mobile */
+  }
+}
